@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>کافه ویولن | جایی برای طعم، آرامش و خاطره</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header>
+  <div class="nav-wrap">
+    <div class="logo">☙ کافه <span>ویولن</span></div>
+    <nav>
+      <ul>
+        <li><a href="#home">خانه</a></li>
+        <li><a href="#cafe-menu">منوی کافه</a></li>
+        <li><a href="#breakfast">منوی صبحانه</a></li>
+        <li><a href="#restaurant">منوی رستوران</a></li>
+        <li><a href="#hookah">منوی قلیان</a></li>
+        <li><a href="#about">درباره ما</a></li>
+        <li><a href="#contact">تماس با ما</a></li>
+      </ul>
+    </nav>
+    <div class="nav-cta">
+      <a href="#contact" class="btn btn-outline">رزرو میز</a>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">خانه</a>
+  <a href="#cafe-menu">منوی کافه</a>
+  <a href="#breakfast">منوی صبحانه</a>
+  <a href="#restaurant">منوی رستوران</a>
+  <a href="#hookah">منوی قلیان</a>
+  <a href="#about">درباره ما</a>
+  <a href="#contact">تماس با ما</a>
+</div>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="eyebrow">کافه · رستوران · فضای هنری</div>
+    <h1 class="hero-title">کافه <span>ویولن</span></h1>
+    <p class="hero-tagline">هر فنجان، یک نُت از یک ملودی آرام</p>
+    <p class="hero-desc">
+      در دل شهر، گوشه‌ای دنج برای عاشقان قهوه، طعم و موسیقی؛ جایی که هر لحظه با رایحه‌ی قهوه‌ی تازه‌دم و صدای آرام موسیقی به یادگار می‌ماند.
+    </p>
+    <div class="hero-btns">
+      <a href="#cafe-menu" class="btn btn-gold">مشاهده منو</a>
+      <a href="#contact" class="btn btn-outline">رزرو میز</a>
+    </div>
+  </div>
+
+  <div class="strings">
+    <svg viewBox="0 0 1200 34" preserveAspectRatio="none">
+      <line x1="0" y1="8" x2="1200" y2="8" stroke="#C7A24A" stroke-opacity="0.35" stroke-width="1"/>
+      <line x1="0" y1="16" x2="1200" y2="18" stroke="#C7A24A" stroke-opacity="0.28" stroke-width="1"/>
+      <line x1="0" y1="24" x2="1200" y2="12" stroke="#C7A24A" stroke-opacity="0.22" stroke-width="1"/>
+    </svg>
+  </div>
+
+  <div class="slider-section">
+    <div class="slider reveal" id="slider">
+      <div class="slides" id="slides">
+        <div class="slide">
+          <img src="images/pic1.png" alt="محصول ویژه ۱">
+          <div class="slide-caption">
+            <h3>هنر در هر لایه</h3>
+            <p>ترکیب ظریف کف و کارامل، امضای باریستاهای کافه ویولن روی هر فنجان</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/pic2.png" alt="محصول ویژه ۲">
+          <div class="slide-caption">
+            <h3>اسپرسوی مخصوص ویولن</h3>
+            <p>برشته‌کاری تازه، عطر گرم و طعمی که در خاطر می‌ماند</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/pic3.png" alt="محصول ویژه ۳">
+          <div class="slide-caption">
+            <h3>لحظه‌ای برای خودتان</h3>
+            <p>یک فنجان، یک مکث کوتاه در ریتم شلوغ روز</p>
+          </div>
+        </div>
+      </div>
+      <button class="slider-arrow prev" id="prevBtn">›</button>
+      <button class="slider-arrow next" id="nextBtn">‹</button>
+      <div class="slider-dots" id="dots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Cafe Menu ===== -->
+<section id="cafe-menu">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">منوی کافه</div>
+      <h2>طعم‌هایی برای هر لحظه</h2>
+      <p>از اسپرسوی تلخ و پرقدرت تا شیک‌های خنک تابستانی؛ هرچه دوست دارید اینجاست.</p>
+    </div>
+
+    <div class="filters" id="cafeFilters">
+      <button class="filter-pill active" data-target="hot">نوشیدنی‌های گرم</button>
+      <button class="filter-pill" data-target="cold">نوشیدنی‌های سرد</button>
+      <button class="filter-pill" data-target="dessert">کیک و دسر</button>
+    </div>
+
+    <div class="menu-group active" id="hot">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>اسپرسو</h4><span class="price">۷۵,۰۰۰ ت</span></div><p>تک‌شات پرقدرت با کرمای طلایی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>آمریکانو</h4><span class="price">۸۵,۰۰۰ ت</span></div><p>اسپرسوی رقیق‌شده با آب داغ</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>لاته</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>شیر بخارداده و یک شات اسپرسو</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>کاپوچینو</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>لایه‌ی فوم شیری روی اسپرسو</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>موکا</h4><span class="price">۱۰۵,۰۰۰ ت</span></div><p>ترکیب شکلات و اسپرسو</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>قهوه ترک</h4><span class="price">۸۰,۰۰۰ ت</span></div><p>دم‌کشیده به سبک سنتی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>هات‌چاکلت</h4><span class="price">۱۱۰,۰۰۰ ت</span></div><p>شکلات تلخ ذوب‌شده و کرم</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>چای</h4><span class="price">۵۵,۰۰۰ ت</span></div><p>دم‌نوش سنتی در کتری نقره‌ای</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>دمنوش</h4><span class="price">۶۵,۰۰۰ ت</span></div><p>ترکیب گیاهان معطر</p></div></div>
+    </div>
+
+    <div class="menu-group" id="cold">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>آیس‌لاته</h4><span class="price">۱۰۵,۰۰۰ ت</span></div><p>لاته‌ی خنک روی یخ</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>آیس‌آمریکانو</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>طعمی تازه و خنک</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>آیس‌موکا</h4><span class="price">۱۱۵,۰۰۰ ت</span></div><p>شکلات و قهوه، خنک و کرمی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>لیموناد</h4><span class="price">۷۵,۰۰۰ ت</span></div><p>ترش و شیرین با نعنای تازه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>اسموتی میوه‌ای</h4><span class="price">۱۱۰,۰۰۰ ت</span></div><p>میوه‌های فصل، تازه و طبیعی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>شیک شکلات</h4><span class="price">۱۲۰,۰۰۰ ت</span></div><p>غلیظ و شکلاتی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>شیک وانیل</h4><span class="price">۱۱۵,۰۰۰ ت</span></div><p>طعم ملایم و کرمی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>شیک نوتلا</h4><span class="price">۱۳۰,۰۰۰ ت</span></div><p>نوتلای اصل با بستنی وانیلی</p></div></div>
+    </div>
+
+    <div class="menu-group" id="dessert">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>کیک شکلاتی</h4><span class="price">۱۲۰,۰۰۰ ت</span></div><p>لایه‌های نرم و مرطوب</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>چیزکیک</h4><span class="price">۱۴۰,۰۰۰ ت</span></div><p>کِرمی با تاپینگ توت‌فرنگی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>تیرامیسو</h4><span class="price">۱۵۵,۰۰۰ ت</span></div><p>کلاسیک ایتالیایی با قهوه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>براونی</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>گرم، فادجی و شکلاتی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>کوکی شکلاتی</h4><span class="price">۶۰,۰۰۰ ت</span></div><p>تازه و ترد با تکه‌های شکلات</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>وافل</h4><span class="price">۱۳۰,۰۰۰ ت</span></div><p>با عسل و میوه‌های تازه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>بستنی</h4><span class="price">۷۵,۰۰۰ ت</span></div><p>سنتی، خامه‌ای و خنک</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>دسر روز</h4><span class="price">تماس بگیرید</span></div><p>پیشنهاد ویژه‌ی امروز آشپزخانه</p></div></div>
+    </div>
+  </div>
+</section>
+
+<div class="container"><div class="strings"><svg viewBox="0 0 1200 34" preserveAspectRatio="none"><line x1="0" y1="17" x2="1200" y2="17" stroke="#6B2E2E" stroke-opacity="0.25" stroke-width="1"/></svg></div></div>
+
+<!-- ===== Breakfast ===== -->
+<section class="breakfast" id="breakfast">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">منوی صبحانه</div>
+      <h2>شروعی گرم برای روز</h2>
+      <p>صبحانه‌ای اشتهابرانگیز، صمیمی و خانگی؛ همراه با رایحه‌ی نان تازه و قهوه‌ی داغ.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>سیمیت</h4><span class="price">۶۵,۰۰۰ ت</span></div><p>نان حلقه‌ای با کنجد</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>املت</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>تخم‌مرغ تازه با ادویه‌های مخصوص</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>املت مخصوص ویولن</h4><span class="price">۱۲۵,۰۰۰ ت</span></div><p>با قارچ، پنیر و سبزیجات تازه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>نیمرو</h4><span class="price">۸۵,۰۰۰ ت</span></div><p>ساده و کلاسیک، تازه سرخ‌شده</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>صبحانه انگلیسی</h4><span class="price">۱۸۵,۰۰۰ ت</span></div><p>تخم‌مرغ، سوسیس، لوبیا و نان تست</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>صبحانه مخصوص ویولن</h4><span class="price">۲۱۰,۰۰۰ ت</span></div><p>تنوعی کامل از پنیر، مربا، عسل و تخم‌مرغ</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>وافل نوتلا</h4><span class="price">۱۴۵,۰۰۰ ت</span></div><p>وافل داغ با نوتلای اصل</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پنکیک</h4><span class="price">۱۳۵,۰۰۰ ت</span></div><p>با شربت افرا و میوه‌های تازه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>کروسان</h4><span class="price">۷۵,۰۰۰ ت</span></div><p>لایه‌لایه و کره‌ای، تازه از فر</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>تست پنیر و سبزی</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>نان تست با پنیر و سبزیجات تازه</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Restaurant ===== -->
+<section id="restaurant" class="beige-bg">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">منوی رستوران</div>
+      <h2>غذایی برای هر اشتها</h2>
+      <p>از ساندویچ‌های خانگی تا پیتزا و پاستای ایتالیایی؛ با بهترین مواد اولیه، تازه و باکیفیت.</p>
+    </div>
+
+    <div class="filters" id="restFilters">
+      <button class="filter-pill active" data-target="sandwiches">ساندویچ‌ها</button>
+      <button class="filter-pill" data-target="appetizers">پیش‌غذا</button>
+      <button class="filter-pill" data-target="pizza">پیتزا</button>
+      <button class="filter-pill" data-target="pasta">پاستا</button>
+      <button class="filter-pill" data-target="sidedrinks">نوشیدنی همراه غذا</button>
+    </div>
+
+    <div class="menu-group active" id="sandwiches">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>برگر مخصوص ویولن</h4><span class="price">۲۲۰,۰۰۰ ت</span></div><p>گوشت گوساله، سس مخصوص و پنیر ذوب‌شده</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>چیزبرگر</h4><span class="price">۱۹۵,۰۰۰ ت</span></div><p>کلاسیک و پرطرفدار</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>برگر مرغ</h4><span class="price">۱۸۵,۰۰۰ ت</span></div><p>سینه مرغ سوخاری با سس مخصوص</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>ساندویچ مرغ</h4><span class="price">۱۷۵,۰۰۰ ت</span></div><p>مرغ گریل‌شده با سبزیجات تازه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>ساندویچ استیک</h4><span class="price">۲۴۵,۰۰۰ ت</span></div><p>استیک نازک با پیاز کاراملی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>کلاب ساندویچ</h4><span class="price">۲۰۵,۰۰۰ ت</span></div><p>سه لایه با مرغ، بیکن و سبزیجات</p></div></div>
+    </div>
+
+    <div class="menu-group" id="appetizers">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>سیب‌زمینی سرخ‌کرده</h4><span class="price">۹۵,۰۰۰ ت</span></div><p>ترد و طلایی با سس مخصوص</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>سیب‌زمینی با قارچ و پنیر</h4><span class="price">۱۲۵,۰۰۰ ت</span></div><p>پوشیده در سس قارچ و پنیر مذاب</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>ناگت مرغ</h4><span class="price">۱۱۵,۰۰۰ ت</span></div><p>سوخاری ترد با سس تند</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>بال مرغ</h4><span class="price">۱۳۵,۰۰۰ ت</span></div><p>مزه‌دار شده و کبابی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>بشقاب مخصوص</h4><span class="price">۲۱۰,۰۰۰ ت</span></div><p>ترکیبی از پیش‌غذاهای منتخب</p></div></div>
+    </div>
+
+    <div class="menu-group" id="pizza">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پیتزا مخصوص ویولن</h4><span class="price">۲۸۰,۰۰۰ ت</span></div><p>ترکیب سخاوتمندانه از گوشت و پنیر</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پیتزا مرغ</h4><span class="price">۲۴۰,۰۰۰ ت</span></div><p>مرغ گریل با قارچ و فلفل دلمه</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پیتزا گوشت</h4><span class="price">۲۶۰,۰۰۰ ت</span></div><p>گوشت چرخ‌کرده مخصوص</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پیتزا پپرونی</h4><span class="price">۲۵۰,۰۰۰ ت</span></div><p>پپرونی تند و پنیر موزارلا</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پیتزا سبزیجات</h4><span class="price">۲۱۰,۰۰۰ ت</span></div><p>سبزیجات تازه‌ی فصل</p></div></div>
+    </div>
+
+    <div class="menu-group" id="pasta">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پاستا آلفردو</h4><span class="price">۱۹۵,۰۰۰ ت</span></div><p>سس خامه‌ای و پارمزان</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پاستا مرغ</h4><span class="price">۲۱۰,۰۰۰ ت</span></div><p>مرغ گریل‌شده با سس مخصوص</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پاستا گوشت</h4><span class="price">۲۲۵,۰۰۰ ت</span></div><p>سس بولونیز خانگی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>پاستا مخصوص ویولن</h4><span class="price">۲۴۵,۰۰۰ ت</span></div><p>ترکیب میگو، مرغ و سس مخصوص آشپزخانه</p></div></div>
+    </div>
+
+    <div class="menu-group" id="sidedrinks">
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>آب معدنی</h4><span class="price">۲۵,۰۰۰ ت</span></div><p>خنک و طبیعی</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>لیموناد</h4><span class="price">۷۵,۰۰۰ ت</span></div><p>تازه و خنک</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>نوشابه</h4><span class="price">۴۵,۰۰۰ ت</span></div><p>قوطی سرد</p></div></div>
+      <div class="menu-card reveal"><div class="info"><div class="row"><h4>دوغ</h4><span class="price">۴۵,۰۰۰ ت</span></div><p>گازدار و خنک</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hookah ===== -->
+<section id="hookah" class="hookah-section">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">منوی قلیان</div>
+      <h2>عصرگاهی آرام</h2>
+      <p>فضایی جدا برای دورهمی‌های آرام، همراه با طعم‌های اصیل و سرویس کامل.</p>
+    </div>
+    <div class="hookah-grid">
+      <div class="hookah-card reveal">
+        <h3>سرویس</h3>
+        <ul>
+          <li>قلیان با سرویس <span class="tag">میوه، ذغال و تعویض سرکولاک</span></li>
+          <li>قلیان بدون سرویس <span class="tag">فقط طعم انتخابی</span></li>
+        </ul>
+      </div>
+      <div class="hookah-card reveal">
+        <h3>طعم‌ها</h3>
+        <ul>
+          <li>مسکو <span class="tag">تلخ و سرد</span></li>
+          <li>دژاوو <span class="tag">میوه‌ای ملایم</span></li>
+          <li>آدامس دارچین <span class="tag">تند و خنک</span></li>
+          <li>طعم‌های میوه‌ای <span class="tag">فصلی</span></li>
+          <li>طعم‌های ترکیبی <span class="tag">پیشنهاد باریستا</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Special offer ===== -->
+<section>
+  <div class="offer-section reveal">
+    <div class="section-head" style="margin-bottom:40px;">
+      <div class="eyebrow" style="color:var(--gold-soft)"><span></span></div>
+      <h2 style="color:var(--cream)">پیشنهاد ویژه‌ی ویولن</h2>
+      <p style="color:rgba(245,238,225,0.75)">منتخب هفته از آشپزخانه و بار کافه</p>
+    </div>
+    <div class="offer-grid">
+      <div class="offer-card">
+        <span class="badge">پیشنهاد باریستا</span>
+        <h4>موکای عسلی ویولن</h4>
+        <p>شکلات تلخ، عسل طبیعی و کف شیر ابری</p>
+        <span class="price">۱۲۵,۰۰۰ ت</span>
+      </div>
+      <div class="offer-card">
+        <span class="badge">پرطرفدار</span>
+        <h4>ست صبحانه‌ی دو نفره</h4>
+        <p>تنوع کامل صبحانه برای دو نفر</p>
+        <span class="price">۳۸۰,۰۰۰ ت</span>
+      </div>
+      <div class="offer-card">
+        <span class="badge">تازه</span>
+        <h4>پیتزا و قلیان دونفره</h4>
+        <p>یک پیتزای مخصوص + یک قلیان با سرویس</p>
+        <span class="price">۴۲۰,۰۰۰ ت</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== About ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-photos reveal">
+        <img src="images/pic2.png" alt="فضای کافه ویولن">
+        <img src="images/pic1.png" alt="نوشیدنی کافه ویولن">
+      </div>
+      <div class="about-text reveal">
+        <div class="eyebrow">درباره کافه ویولن</div>
+        <h2>جایی برای مکث کردن</h2>
+        <p>کافه ویولن از دلِ علاقه به قهوه‌ی خوب و لحظه‌های آرام متولد شد. اینجا صدای فنجان‌ها با نجوای گفت‌وگوها و گاهی نتی از یک ملودی آرام در هم می‌آمیزد.</p>
+        <p>چه برای یک قرار کاری، چه یک دورهمی دوستانه یا فقط یک فنجان قهوه در تنهایی، فضای گرم و هنری ویولن همیشه پذیرای شماست.</p>
+        <div class="about-stats">
+          <div><h5>+۵</h5><span>سال تجربه</span></div>
+          <div><h5>+۴۰</h5><span>آیتم منو</span></div>
+          <div><h5>هرروز</h5><span>باز از ۸ تا ۲۳</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Hours ===== -->
+<section class="hours-section">
+  <div class="container">
+    <div class="hours-card reveal">
+      <div class="eyebrow" style="justify-content:center;color:var(--gold-soft)">ساعات کاری</div>
+      <div class="clock">۸:۰۰ – ۲۳:۰۰</div>
+      <p>هر روز هفته، بدون تعطیلی</p>
+      <div class="hours-days">شنبه تا جمعه</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">تماس با ما</div>
+      <h2>منتظر دیدارتان هستیم</h2>
+      <p>برای رزرو میز یا هر سوالی، از راه‌های زیر با ما در ارتباط باشید.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="contact-info-list">
+          <div class="contact-item">
+            <div class="icon">☏</div>
+            <div><h5>شماره تماس</h5><p>۰۲۱-۱۲۳۴۵۶۷۸ &nbsp;|&nbsp; ۰۹۱۲-۰۰۰۰۰۰۰</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">⚑</div>
+            <div><h5>آدرس</h5><p>تهران، خیابان نمونه، کوچه ویولن، پلاک ۰ (Placeholder)</p></div>
+          </div>
+          <div class="contact-item">
+            <div class="icon">✉</div>
+            <div><h5>شبکه‌های اجتماعی</h5>
+              <div class="social-row">
+                <a href="#" aria-label="اینستاگرام">IG</a>
+                <a href="#" aria-label="تلگرام">TG</a>
+                <a href="#" aria-label="واتساپ">WA</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-btns">
+          <a href="tel:+982112345678" class="btn btn-gold">تماس بگیرید</a>
+          <a href="#" class="btn btn-outline" style="border-color:rgba(107,46,46,0.35);color:var(--burgundy);">مسیریابی</a>
+        </div>
+      </div>
+      <div class="map-box reveal">
+        <div>
+          <div class="pin">⚑</div>
+          <p>موقعیت روی نقشه<br><small>(محل قرارگیری نقشه — بعداً جایگزین شود)</small></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col brand">
+        <div class="footer-logo">☙ کافه <span>ویولن</span></div>
+        <p>گوشه‌ای دنج برای عاشقان قهوه، طعم و آرامش؛ هر روز از ۸ صبح تا ۱۱ شب پذیرای شماست.</p>
+        <div class="social-row">
+          <a href="#" aria-label="اینستاگرام">IG</a>
+          <a href="#" aria-label="تلگرام">TG</a>
+          <a href="#" aria-label="واتساپ">WA</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>لینک‌های سریع</h5>
+        <ul>
+          <li><a href="#cafe-menu">منوی کافه</a></li>
+          <li><a href="#breakfast">منوی صبحانه</a></li>
+          <li><a href="#restaurant">منوی رستوران</a></li>
+          <li><a href="#hookah">منوی قلیان</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>ساعات کاری</h5>
+        <ul>
+          <li>هر روز هفته</li>
+          <li>۸:۰۰ صبح تا ۱۱:۰۰ شب</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>تماس</h5>
+        <ul>
+          <li>۰۲۱-۱۲۳۴۵۶۷۸</li>
+          <li>تبریز خیابان سعدی</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="motto">کافه ویولن؛ جایی برای طعم، آرامش و خاطره</div>
+      <div>© ۱۴۰۴ کافه ویولن. تمامی حقوق محفوظ است.</div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
